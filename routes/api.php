@@ -17,4 +17,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/distance/{distance1}/{distance2}', 'DistanceApiController');
+Route::get('/distance/{unit1}/{distance1}/{unit2}/{distance2}/{outputUnit}', 'DistanceApiController');
